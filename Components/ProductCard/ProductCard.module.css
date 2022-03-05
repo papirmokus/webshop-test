@@ -1,0 +1,56 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 2px 2px 12px 1px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+
+.cardContainer:hover{
+  margin-top: -2px;
+  margin-bottom: 2px;
+  box-shadow: 4px 4px 16px 3px rgba(0,0,0,0.4);
+}
+
+.imageWrapper {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  margin: 12px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .imageWrapper {
+    height: 200px;
+  }
+}
+@media (max-width: 700px) {
+  .imageWrapper {
+    height: 175px;
+  }
+}
+
+.cardInfo {
+  padding: 1rem;
+  flex: 1;
+}
+
+.title {
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.title:hover {
+  text-decoration: underline;
+}
+
+.price {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+}

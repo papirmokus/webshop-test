@@ -1,0 +1,30 @@
+.cartLi {
+  display: flex;
+  color: initial;
+  font-size: 0.9rem;
+}
+.infoContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 10px;
+  padding-right: 28px;
+}
+.removeIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 50%;
+  color: rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: 0.3s ease;
+  padding: 8px;
+}
+.removeIcon:hover {
+  background-color: #f76b6b;
+  color: #FFF;
+}

@@ -1,0 +1,60 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 5px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: calc(100% - 1px);
+  max-width: 400px;
+  width: 400px;
+  background: #FAFAFA;
+  overflow: hidden;
+  color: black;
+  font-size: 1rem;
+  box-shadow: 0 6px 6px rgba(0,0,0, 0.3);
+}
+
+.container {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  color: #FFF;
+  font-size: 1.3rem;
+}
+
+.marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #FE6401;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+@keyframes markerAnimation {
+  from {
+    transform: scale(300%);
+    opacity: 0;
+    border-width: 3px;
+    border-color: rgba(255,255,255,0.7);
+  }
+  to {
+    transform: scale(100%);
+    opacity: 1;
+    border-width: 0px;
+    border-color: rgba(255,255,255,0.0);
+  }
+}
+
+.markerAnimate {
+  animation-name: markerAnimation;
+  animation-duration: 0.3s;
+}
